@@ -4,10 +4,10 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Team
-
-1) Anukriti Singh
-2) Joshua Arup Gomes
-3) Mayank Sharma 
+For phase 1:
+1) Anukriti Singh (driver)
+2) Joshua Arup Gomes (navigator)
+3) Mayank Sharma (design keeper)
 
 ## Overview
 
