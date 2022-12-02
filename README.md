@@ -30,8 +30,8 @@ In the foodservice industry it has become incedibly challenging to deliver food 
 
 ## Development Process
 Following the Agile Iterative Process for Development, we switch roles of driver, navigator and design keeper. 
-Product backlog, iteration backlog and worklog:  [here](https://docs.google.com/spreadsheets/d/1dZ-y45_AL5Mc8_DbIJrSJJ0H6H_2HLId_zzahEZlHxE/edit#gid=2139171243) 
-Sprint planning: [here](https://docs.google.com/document/d/1f-xjoKFd7hRqJ0oETVylUt3rAWTCG6LZAqg9HKFyrsw/edit)
+* Product backlog, iteration backlog and worklog:  [here](https://docs.google.com/spreadsheets/d/1dZ-y45_AL5Mc8_DbIJrSJJ0H6H_2HLId_zzahEZlHxE/edit#gid=2139171243) 
+* Sprint planning: [here](https://docs.google.com/document/d/1f-xjoKFd7hRqJ0oETVylUt3rAWTCG6LZAqg9HKFyrsw/edit)
 
 ## Enviornment
 
