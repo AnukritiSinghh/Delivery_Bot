@@ -6,7 +6,7 @@
 ## Team
 For phase 1:
 1) Anukriti Singh (driver)
-2) Joshua Arup Gomes (navigator)
+2) Joshua Arup Gomes (navigator) 
 3) Mayank Sharma (design keeper)
 For phase 2:
 1) Anukriti Singh (navigator)
