@@ -52,9 +52,9 @@ set(dependencies
   "tf2"
 )
 
-set(EXEC_NAME "turtlebot3_drive")
+set(EXEC_NAME "hamburger_drive")
 
-add_executable(${EXEC_NAME} src/turtlebot3_drive.cpp)
+add_executable(${EXEC_NAME} src/hamburger_drive.cpp)
 ament_target_dependencies(${EXEC_NAME} ${dependencies})
 
 add_library(obstacle1 SHARED models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc)
