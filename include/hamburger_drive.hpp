@@ -1,4 +1,4 @@
-// Copyright 2022
+// Copyright 2022 Mayank Sharma, Joshua Gomez, Anukriti Singh
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 
 /**
  * @file Tb3Walker.hpp
- * @author Joshua Gomez, Mayank Sharma, Anukriti Singh
+ * @author Mayank Sharma, Joshua Gomez, Anukriti Singh
  * @brief Class definition of the Turtlebot3 Walker
  * @version 0.1
  * @date 2022-12-15

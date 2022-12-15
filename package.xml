@@ -8,7 +8,9 @@
   <description>
     Gazebo simulation package for the TurtleBot3
   </description>
-  <maintainer email="willson@robotis.com">Will Son</maintainer>
+  <maintainer email="sharmamayank1301@gmail.com">Mayank Sharma</maintainer>
+  <maintainer email="jgomes14@umd.edu">Joshua Gomez</maintainer>
+  <maintainer email="anukriti@umd.edu">Anukriti Singh</maintainer>
   <license>Apache 2.0</license>
   <url type="website">http://turtlebot3.robotis.com</url>
   <url type="repository">https://github.com/ROBOTIS-GIT/turtlebot3_simulations</url>
