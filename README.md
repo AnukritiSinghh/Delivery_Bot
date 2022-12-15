@@ -40,7 +40,22 @@ We are using ros2 turtlebot burger for our prototype to achieve the task. Our ta
 
 
 ## Development Process
-Following the Agile Iterative Process for Development, we switch roles of driver, navigator and design keeper. 
+Following the Agile Iterative Process for Development, we switch roles of driver, navigator and design keeper.
+For Phase 0:
+1) Anukriti Singh (driver)
+2) Joshua Arup Gomes (navigator) 
+3) Mayank Sharma (design keeper)
+
+For phase 2:
+1) Anukriti Singh (navigator)
+2) Joshua Arup Gomes (driver)
+3) Mayank Sharma (design keeper)
+
+For phase 2:
+1) Anukriti Singh (design keeper)
+2) Joshua Arup Gomes (driver)
+3) Mayank Sharma (navigator)
+
 * Product backlog, iteration backlog and worklog:  [here](https://docs.google.com/spreadsheets/d/1dZ-y45_AL5Mc8_DbIJrSJJ0H6H_2HLId_zzahEZlHxE/edit#gid=2139171243) 
 * Sprint planning: [here](https://docs.google.com/document/d/1f-xjoKFd7hRqJ0oETVylUt3rAWTCG6LZAqg9HKFyrsw/edit)
 
