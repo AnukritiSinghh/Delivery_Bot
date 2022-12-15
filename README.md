@@ -4,19 +4,17 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Team
-For phase 1:
-1) Anukriti Singh (driver)
-2) Joshua Arup Gomes (navigator) 
-3) Mayank Sharma (design keeper)
-\\\
-For phase 2:
-1) Anukriti Singh (navigator)
-2) Joshua Arup Gomes (driver)
-3) Mayank Sharma (design keeper)
+1) Anukriti Singh 
+2) Joshua Arup Gomes  
+3) Mayank Sharma 
 
 ## Overview
 
-In the foodservice industry it has become incedibly challenging to deliver food and beverages seamlessly and efficiently, every day. Humans tend to get distracted and tired, they also need break and holidays. However, this all can be avoided by using the state of the art technology. With delivery robots, the orders can be delivered to the custromors with precision and effeciency. We are using ros2 turtlebot to achieve this task. 
+In the foodservice industry it has become incedibly challenging to deliver food and beverages seamlessly and efficiently, every day. Humans tend to get distracted and tired, they also need break and holidays. However, this all can be avoided by using the state of the art technology. With delivery robots, the orders can be delivered to the custromors with precision and effeciency. It is also a way to reduce labor costs, while others see it as a way to improve the customer experience, but regardless of which side you are on, the restaurant robotics is definitely coming. $235 billion are paid annually in restaurant wages in the U.S. and the foodservice industry has a $95 billion annual turnover cost. Some estimates indicate robotics can save between 30% and 70% on labor cost for restaurants. In such a scenario, we can balance this out by using robots in the workforce. 
+We are using ros2 turtlebot burger for our prototype to achieve the task. Our tasks are two phased:
+* First, navigation from position A to position B 
+* Secondly, take the food and avoid obstacle autonomously to reach the customer table
+
 
 ## Deliverables
 * Project: Project is search and deliver robot for restaruant dining
@@ -24,14 +22,22 @@ In the foodservice industry it has become incedibly challenging to deliver food 
 * UML and activity diagrams
 * Developer-level documentation
 
-## Video Presentation
+## Presentation slides
 
 ## Dependencies with licenses
-* Apache 2 License
-* ROS Humble/Foxy 
-* Turtlebot2 
-* Gazebo 
-* GTest
+* Ubuntu 22.04 LTS
+* C++
+* CMake
+* Git 
+* Travis CI
+* Coveralls
+* ROS2 Humble
+* RVIZ
+* Gazebo
+* Rostest
+* Gtest
+* TurtleBot3
+
 
 ## Development Process
 Following the Agile Iterative Process for Development, we switch roles of driver, navigator and design keeper. 
