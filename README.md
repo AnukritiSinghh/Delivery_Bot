@@ -23,6 +23,7 @@ We are using ros2 turtlebot burger for our prototype to achieve the task. Our ta
 * Developer-level documentation
 
 ## Presentation slides
+[Link](https://drive.google.com/file/d/1skqSzquj8Vp6N86IX2OeqfJ60_TsG-lV/view?usp=sharing)
 
 ## Dependencies with licenses
 * Ubuntu 22.04 LTS
