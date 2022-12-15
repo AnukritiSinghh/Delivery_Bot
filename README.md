@@ -61,7 +61,7 @@ For phase 2:
 * Sprint planning: [here](https://docs.google.com/document/d/1f-xjoKFd7hRqJ0oETVylUt3rAWTCG6LZAqg9HKFyrsw/edit)
 
 ## Enviornment
-
+![](Delivery_Bot/launch/turtlebot3_house.png)
 ## Static Code analysis
 * Cppcheck results can be found [here]()
 * Cpplint results can be found [here]()
