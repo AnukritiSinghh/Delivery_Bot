@@ -1,0 +1,12 @@
+cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_order  hamburger_drive.cpp
+Done processing hamburger_drive.cpp
+
+cppcheck --enable=all --std=c++17 --suppress=missingIncludeSystem hamburger_drive.cpp
+Checking hamburger_drive.cpp ...
+
+
+cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_order hamburger_drive.hpp
+Done processing hamburger_drive.hpp
+
+cppcheck --enable=all --std=c++17 --suppress=missingIncludeSystem hamburger_drive.hpp
+Checking hamburger_drive.hpp ...

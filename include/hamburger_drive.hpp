@@ -13,9 +13,9 @@
 // limitations under the License.
 
 /**
- * @file Tb3Walker.hpp
+ * @file hamburger_drive.hpp
  * @author Mayank Sharma, Joshua Gomez, Anukriti Singh
- * @brief Class definition of the Turtlebot3 Walker
+ * @brief Class definition of the Hamburger
  * @version 0.1
  * @date 2022-12-15
  * 
@@ -43,7 +43,7 @@ typedef enum {
 } StateType;
 
 /**
- * @brief Class to implement walker algorithm for the TurtleBot3
+ * @brief Class to implement walker algorithm for the Hamburger
  * 
  */
 class Robot : public rclcpp::Node {
