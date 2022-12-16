@@ -73,13 +73,18 @@ jobs:
           ros2 run delivery_bot generate_coverage_report.bash  
           
       # Upload coverage result to CodeCov
-      - name: Upload coverage result to CodeCov
-        uses: codecov/codecov-action@v3
+#       - name: Upload coverage result to CodeCov
+#         uses: codecov/codecov-action@v3
+#         with:
+#           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+#           files: ${{github.workspace}}/install/delivery_bot/lib/delivery_bot/coverage_cleaned.info
+#           # flags: unittests # optional
+#           # directory: ${{github.workspace}}/install/
+#           # name: codecov-umbrella # optional
+#           fail_ci_if_error: true # optional (default = false)
+#           verbose: true # optional (default = false)
+      - name: Upload result to Coveralls.io
+        uses: coverallsapp/github-action@1.1.3
         with:
-          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-          files: ${{github.workspace}}/install/delivery_bot/lib/delivery_bot/coverage_cleaned.info
-          # flags: unittests # optional
-          # directory: ${{github.workspace}}/install/
-          # name: codecov-umbrella # optional
-          fail_ci_if_error: true # optional (default = false)
-          verbose: true # optional (default = false)
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: ${{github.workspace}}/install/delivery_bot/lib/delivery_bot/coverage_cleaned.info
