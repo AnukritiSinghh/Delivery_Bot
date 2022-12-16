@@ -60,22 +60,6 @@ jobs:
       - name: CMake Dependencies for the package
         run: |
           sudo apt install ros-foxy-gazebo-ros-pkgs
-      # Build for test coverage
-      - name: Configure CMake flags and build exectables
-        run: |
-          source /opt/ros/foxy/setup.bash
-          colcon build --cmake-args -DCOVERAGE=1 --packages-select delivery_bot
-          cat log/latest_build/delivery_bot/stdout_stderr.log
-          find build/delivery_bot/ | grep -E 'gcno' # catch error -- exepct to see .gcno files
-      
-      # Run unit test and also check c++ code (and others) for style and static coding errors
-      - name: Run unit test and check code error
-        run: |
-          source /opt/ros/foxy/setup.bash
-          colcon test --packages-select mario_com
-          cat log/latest_test/delivery_bot/stdout_stderr.log
-          find build/delivery_bot/ | grep -E 'gcda' # catch error -- expect to see .gcda files
-          colcon test-result --test-result-base build/delivery_bot/ # catch error
       
       # Generate code coverage test report
       - name: Generate test coverage report
@@ -87,7 +71,7 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-          files: ${{github.workspace}}/install/delivery_bot/lib/mario_com/coverage_cleaned.info
+          files: ${{github.workspace}}/install/delivery_bot/lib/delivery_bot/coverage_cleaned.info
           # flags: unittests # optional
           # directory: ${{github.workspace}}/install/
           # name: codecov-umbrella # optional
