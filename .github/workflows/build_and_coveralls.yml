@@ -50,17 +50,16 @@ jobs:
           sudo apt update
           sudo apt install -y ros-humble-ros-base python3-colcon-common-extensions
           sudo apt install -y lcov
+            # Install Gazebo ROS and other dependencies
+      - name: CMake Dependencies for the package
+        run: |
+          sudo apt install ros-humble-gazebo-ros-pkgs  
           
       - name: Configure CMake flags and build exectables
         run: |
           source /opt/ros/humble/setup.bash
-          colcon build --cmake-args -DCOVERAGE=1 --packages-select delivery_bot
- 
-          
-      # Install Gazebo ROS and other dependencies
-      - name: CMake Dependencies for the package
-        run: |
-          sudo apt install ros-humble-gazebo-ros-pkgs
+          colcon build --cmake-args -DCOVERAGE=1 --packages-select delivery_bot          
+
       
       - name: Run unit test and check code error
         run: |
