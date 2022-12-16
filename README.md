@@ -19,6 +19,8 @@ In the foodservice industry it has become incedibly challenging to deliver food 
 We are using ros2 turtlebot burger for our prototype to achieve the task. Our tasks are two phased:
 * First, navigation from position A to position B 
 * Secondly, take the food and avoid obstacle autonomously to reach the customer table
+![image](https://github.com/AnukritiSinghh/project_finder/blob/main/results/navigation_1.gif)
+![image](https://github.com/AnukritiSinghh/project_finder/blob/main/results/obstacle_avoid.gif)
 
 
 ## Deliverables
@@ -71,8 +73,8 @@ For phase 3:
 ![](Delivery_Bot/launch/turtlebot3_house.png)
 
 ## Static Code analysis
-* Cppcheck results can be found [here]()
-* Cpplint results can be found [here]()
+* Cppcheck results can be found [here](https://github.com/AnukritiSinghh/Delivery_Bot/blob/phase_3/results/cpplint_and_cppcheck_result.txt)
+* Cpplint results can be found [here](https://github.com/AnukritiSinghh/Delivery_Bot/blob/phase_3/results/cpplint_and_cppcheck_result.txt)
 
 ## Installation
 
