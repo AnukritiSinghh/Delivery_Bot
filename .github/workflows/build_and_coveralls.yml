@@ -33,9 +33,10 @@ jobs:
       # We want to use GitHub CI checkout version 3 for checking out the branch
       - uses: actions/checkout@v3
       
-      # Install some system pacakges
-      - name: Install packages
-        run: bash ${{github.workspace}}/dependencies.sh
+      # Install Gazebo ROS and other dependencies
+      - name: CMake Dependencies for the package
+        run: |
+          sudo apt install ros-humble-gazebo-ros-pkgs
 
       # Run CMake to setup compilation flags
       - name: Configure Coverage CMake 
@@ -51,12 +52,6 @@ jobs:
         working-directory: ${{github.workspace}}/build
         run: make code_coverage
       
-      # Upload coverage result to Coverage.io 
-      - name: Upload result to Coveralls.io
-        uses: coverallsapp/github-action@1.1.3
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          path-to-lcov: ${{github.workspace}}/build/coverage.info.cleaned
           
        # Upload coverage result to CodeCov
       - name: Upload coverage result to CodeCov
