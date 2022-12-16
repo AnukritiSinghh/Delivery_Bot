@@ -55,8 +55,7 @@ jobs:
         run: |
           source /opt/ros/humble/setup.bash
           colcon build --cmake-args -DCOVERAGE=1 --packages-select delivery_bot
-          cat log/latest_build/delivery_bot/stdout_stderr.log
-          find build/delivery_bot/ | grep -E 'gcno' # catch error -- exepct to see .gcno files
+ 
           
       # Install Gazebo ROS and other dependencies
       - name: CMake Dependencies for the package
@@ -67,9 +66,6 @@ jobs:
         run: |
           source /opt/ros/humble/setup.bash
           colcon test --packages-select delivery_bot
-          cat log/latest_test/delivery_bot/stdout_stderr.log
-          find build/delivery_bot/ | grep -E 'gcda' # catch error -- expect to see .gcda files
-          colcon test-result --test-result-base build/delivery_bot/ # catch error
       
       # Upload coverage result to CodeCov
       - name: Upload coverage result to CodeCov
