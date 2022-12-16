@@ -11,6 +11,7 @@ For phase 1:
 1) Anukriti Singh (driver) 
 2) Joshua Arup Gomes (navigator)  
 3) Mayank Sharma (design keeper)
+
 For phase 2:
 1) Anukriti Singh (navigator)
 2) Joshua Arup Gomes (driver)
@@ -27,7 +28,7 @@ In the foodservice industry it has become incedibly challenging to deliver food 
 * Developer-level documentation
 
 ## Screenshot Capture 
-In results folder as !!!!!!!!!!Rvis_Gazebo_Driver_capture.png!!!!!!!!!
+
 ## Dependencies with licenses
 * Apache 2 License
 * ROS Humble/Foxy 
@@ -48,11 +49,6 @@ Following the Agile Iterative Process for Development, we switch roles of driver
 
 ## Installation
 
-
-
-may not require but if any issues is run into do the following !!!required dependencies!!!??????
-
----
 In your workspace src folder(EX: /ros_ws/src) download the final tag (Phase 3)  
 
 After downloading the repo onto the source folder, build it and launch the turtlebot3 into our custom test world
@@ -76,7 +72,7 @@ export TURTLEBOT3_MODEL=burger
 ros2 launch Delivery_Bot cartographer.launch.py \
 use_sim_time:=True
 ```
----
+
 To run the obstacle avoidance program
 ```
 #In a new terminal in your workspace
@@ -94,7 +90,7 @@ To save the map, enter the following command map
 ```
 ros2 run nav2_map_server map_saver_cli -f obstacle_sample_map
 ```
----
+
 Using the created map, the user now can use RVIS to set the desired endpoint of a turtlebot, assuming a complete map is taken
 
 ```
@@ -119,8 +115,7 @@ The user can denote the end and start point for the Hamburger in RVIS
 
 
 ## Known issues
---
-!!!!!!!!!!!!!!!!
+
 could not make own rvis launch file, had issues finding turtlebot3_lds_2d.lua,
 reliant on turtlbot source code 
 --
