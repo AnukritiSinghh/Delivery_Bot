@@ -99,7 +99,6 @@ if(BUILD_TESTING)
     test/test.cpp)
   ament_add_gtest(test_${PROJECT_NAME} ${TESTFILES})
   ament_target_dependencies(test_${PROJECT_NAME} ${dependencies} )
-  target_link_libraries(test_${PROJECT_NAME} robot_library)
   install(TARGETS
   test_${PROJECT_NAME}
   DESTINATION lib/${PROJECT_NAME})
