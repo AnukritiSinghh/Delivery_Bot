@@ -32,6 +32,14 @@ find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 
+##
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 ################################################################################
 # Build
 ################################################################################
@@ -54,17 +62,43 @@ set(dependencies
 
 set(EXEC_NAME "hamburger_drive")
 
+
+
+if(BUILD_TESTING)
+  find_package(ament_cmake_gtest REQUIRED)
+  find_package(ament_lint_auto REQUIRED)
+
+  # the following lines skip linters
+  set(ament_cmake_cppcheck_FOUND TRUE)
+  set(ament_cmake_copyright_FOUND TRUE)
+  set(ament_cmake_cpplint_FOUND TRUE)
+  set(ament_cmake_flake8_FOUND TRUE)
+  set(ament_cmake_uncrustify_FOUND TRUE)
+  set(ament_cmake_xmllint_FOUND TRUE)
+  set(ament_cmake_lint_cmake_FOUND TRUE)
+  set(ament_cmake_linter_FOUND TRUE)
+  set(ament_cmake_pep257_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+
+  # Run all lint tests in package.xml except those listed above
+  ament_lint_auto_find_test_dependencies()
+
+  # Add a gtest executable
+  set(TESTFILES
+    test/main.cpp
+    test/test.cpp)
+  ament_add_gtest(test_${PROJECT_NAME} ${TESTFILES})
+  ament_target_dependencies(test_${PROJECT_NAME} ${dependencies} )
+
+  install(TARGETS
+  test_${PROJECT_NAME}
+  DESTINATION lib/${PROJECT_NAME})
+
+endif()
+
+
 add_executable(${EXEC_NAME} src/hamburger_drive.cpp)
 ament_target_dependencies(${EXEC_NAME} ${dependencies})
-
-#add_library(obstacle1 SHARED models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc)
-#target_link_libraries(obstacle1 ${GAZEBO_LIBRARIES})
-
-#add_library(obstacle2 SHARED models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc)
-#target_link_libraries(obstacle2 ${GAZEBO_LIBRARIES})
-
-#add_library(obstacles SHARED models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc)
-#target_link_libraries(obstacles ${GAZEBO_LIBRARIES})
 
 ################################################################################
 # Install

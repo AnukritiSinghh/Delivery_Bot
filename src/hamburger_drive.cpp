@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 /**
- * @file Robot.cpp
+ * @file hamburger_drive.cpp
  * @author Mayank Sharma, Joshua Gomez, Anukriti Singh
  * @brief Implementation of the Tb3Walker class methods
  * @version 0.1

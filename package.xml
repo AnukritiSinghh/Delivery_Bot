@@ -4,9 +4,9 @@
   <name>Delivery_Bot</name>
   <version>0.0.1</version>
   <description>Delivery_Bot program</description>
-  <maintainer email="sharmamayank1301@gmail.com">Mayank Sharma</maintainer>
-  <maintainer email="jgomes14@umd.edu">Joshua Gomez</maintainer>
+  <maintainer email="jgomes14@gmail.com">Joshua Gomes</maintainer>
   <maintainer email="anukriti@umd.edu">Anukriti Singh</maintainer>
+  <maintainer email="smayank@umd.edu">Mayank Yogendra Sharma</maintainer>
   <license>Apache-2.0</license>
   
   
@@ -17,6 +17,11 @@
   <depend>rclcpp</depend>
   <depend>sensor_msgs</depend>
   <depend>tf2</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+
   <export>
     <build_type>ament_cmake</build_type>
     <gazebo_ros gazebo_model_path="${prefix}/models"/>

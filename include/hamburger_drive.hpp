@@ -17,7 +17,7 @@
  * @author Mayank Sharma, Joshua Gomez, Anukriti Singh
  * @brief Class definition of the Hamburger
  * @version 0.1
- * @date 2022-12-15
+ * @date 2022-12-05
  * 
  * @copyright Copyright (c) 2022
  * 
@@ -49,7 +49,9 @@ typedef enum {
 class Robot : public rclcpp::Node {
  public:
     Robot();
-
+    float left_dist_;  // Distance measured by left ray of Laser
+    float center_dist_;  // Distance measured by center ray of Laser
+    float right_dist_;  // Distance measured by right ray of Laser
  private:
     /**
      * @brief Callback function to determine the state of the system and decide on the new input.
@@ -76,8 +78,6 @@ class Robot : public rclcpp::Node {
     rclcpp::TimerBase::SharedPtr timer_;
 
     SCAN scan_;  // To store incoming laser scan data
-    float left_dist_;  // Distance measured by left ray of Laser
-    float center_dist_;  // Distance measured by center ray of Laser
-    float right_dist_;  // Distance measured by right ray of Laser
+
     StateType state_;
 };
