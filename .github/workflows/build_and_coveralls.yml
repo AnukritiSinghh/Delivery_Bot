@@ -61,11 +61,6 @@ jobs:
         run: |
           sudo apt install ros-foxy-gazebo-ros-pkgs
       
-      # Generate code coverage test report
-      - name: Generate test coverage report
-        run: |
-          source install/setup.bash
-          ros2 run delivery_bot generate_coverage_report.bash
       # Upload coverage result to CodeCov
       - name: Upload coverage result to CodeCov
         uses: codecov/codecov-action@v2
