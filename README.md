@@ -2,9 +2,9 @@
 ## A service bot delivering food in restaurant using ROS2 
 
 
-[![Build Status](https://github.com/AnukritiSinghh/Delivery_Bot/actions/workflows/build_and_coveralls.yml/badge.svg)](https://github.com/AnukritiSinghh/Delivery_Bot/actions/workflows/build_and_coveralls.yml)
+[![Build Status](https://github.com/AnukritiSinghh/delivery_bot/actions/workflows/build_and_coveralls.yml/badge.svg)](https://github.com/AnukritiSinghh/delivery_bot/actions/workflows/build_and_coveralls.yml)
 
-[![Coverage Status](https://coveralls.io/repos/github/AnukritiSinghh/Delivery_Bot/badge.svg?branch=master)](https://coveralls.io/github/AnukritiSinghh/Delivery_Bot?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/AnukritiSinghh/delivery_bot/badge.svg?branch=master)](https://coveralls.io/github/AnukritiSinghh/delivery_bot?branch=master)
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
