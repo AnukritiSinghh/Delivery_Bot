@@ -175,7 +175,7 @@ The user can denote the end and start point for the Hamburger in RVIS
 
 * Could not make own rvis launch file, had issues finding turtlebot3_lds_2d.lua,
 reliant on turtlbot source code.
-* Build badge not wokring as expected 
+
 ```
 colcon build --packages-select hamburger_cartographer 
 ```
