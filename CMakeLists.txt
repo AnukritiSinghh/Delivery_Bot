@@ -1,7 +1,7 @@
 ################################################################################
 # Set minimum required version of cmake, project name and compile options
 ################################################################################
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.8)
 #project(turtlebot3_gazebo)
 project(delivery_bot)
 
@@ -32,8 +32,8 @@ find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(ament_cmake_gtest)
+find_package(rosbag2_cpp REQUIRED)
 
-##
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
@@ -44,6 +44,15 @@ find_package(rosidl_default_generators REQUIRED)
 ################################################################################
 # Build
 ################################################################################
+if(COVERAGE)
+  set(CMAKE_BUILD_TYPE "Debug")
+  set(CMAKE_CXX_FLAGS "--coverage")
+  set(CMAKE_CXX_OUTPUT_EXTENSION_REPLACE "ON")
+  set(ARG_CONFIG_FILE "${PROJECT_SOURCE_DIR}/uncrustify_google_cpp_allman.cfg"
+    CACHE STRING "uncrustify config file")
+endif()
+
+
 link_directories(
   ${GAZEBO_LIBRARY_DIRS}
 )
@@ -90,13 +99,15 @@ if(BUILD_TESTING)
     test/test.cpp)
   ament_add_gtest(test_${PROJECT_NAME} ${TESTFILES})
   ament_target_dependencies(test_${PROJECT_NAME} ${dependencies} )
-
+  target_link_libraries(test_${PROJECT_NAME} robot_library)
   install(TARGETS
   test_${PROJECT_NAME}
   DESTINATION lib/${PROJECT_NAME})
 
 endif()
-
+install(PROGRAMS # want to make the file executable (ie. chmod a+x)
+  scripts/generate_coverage_report.bash
+  DESTINATION lib/${PROJECT_NAME})
 
 add_executable(${EXEC_NAME} src/hamburger_drive.cpp)
 ament_target_dependencies(${EXEC_NAME} ${dependencies})
