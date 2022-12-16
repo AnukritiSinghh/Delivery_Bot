@@ -31,6 +31,7 @@ find_package(nav_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
+find_package(ament_cmake_gtest)
 
 ##
 find_package(ament_cmake REQUIRED)
@@ -125,4 +126,7 @@ ament_export_dependencies(nav_msgs)
 ament_export_dependencies(rclcpp)
 ament_export_dependencies(sensor_msgs)
 ament_export_dependencies(tf2)
+install(PROGRAMS # want to make the file executable (ie. chmod a+x)
+  scripts/generate_coverage_report.bash
+  DESTINATION lib/${PROJECT_NAME})
 ament_package()
