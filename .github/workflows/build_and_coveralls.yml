@@ -36,7 +36,7 @@ jobs:
       # Install Gazebo ROS and other dependencies
       - name: CMake Dependencies for the package
         run: |
-          sudo apt install ros-humble-gazebo-ros-pkgs
+          sudo apt install ros-humble-desktop
 
       # Run CMake to setup compilation flags
       - name: Configure Coverage CMake 
