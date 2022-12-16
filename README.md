@@ -1,8 +1,8 @@
 # Delivery_Bot
 ## A service bot delivering food in restaurant using ROS2 
-[![Build Status](https://github.com/AnukritiSinghh/Delivery_Bot/test12/src/Delivery_Bot/.github/workflows/build_and_coveralls.yml/badge.svg)](https://github.com/AnukritiSinghh/Delivery_Bot/actions/workflows/build_and_coveralls.yml)
 
-[![Build Status](https://github.com/AnukritiSinghh/Delivery_Bot/actions/workflows/build_and_coveralls.yml/badge.svg?branch=master)](https://github.com/AnukritiSinghh/Delivery_Bot/actions/workflows/build_and_coveralls.yml)
+
+[![Build Status](https://github.com/AnukritiSinghh/Delivery_Bot/actions/workflows/build_and_coveralls.yml/badge.svg?branch=phase_3)](https://github.com/AnukritiSinghh/Delivery_Bot/actions/workflows/build_and_coveralls.yml)
 
 [![Coverage Status](https://coveralls.io/repos/github/AnukritiSinghh/Delivery_Bot/badge.svg?branch=master)](https://coveralls.io/github/AnukritiSinghh/Delivery_Bot?branch=master)
 
