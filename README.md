@@ -19,8 +19,10 @@ In the foodservice industry it has become incedibly challenging to deliver food 
 We are using ros2 turtlebot burger for our prototype to achieve the task. Our tasks are two phased:
 * First, navigation from position A to position B 
 * Secondly, take the food and avoid obstacle autonomously to reach the customer table
-![image](https://github.com/AnukritiSinghh/project_finder/blob/main/results/navigation_1.gif)
-![image](https://github.com/AnukritiSinghh/project_finder/blob/main/results/obstacle_avoid.gif)
+
+
+![alt text](./results//navigation_1.gif?raw=true "Navigation")
+![alt text](./results//obstacle_avoid.gif?raw=true "Obstacle avoidance")
 
 
 ## Deliverables
@@ -70,7 +72,8 @@ For phase 3:
 * Sprint planning: [here](https://docs.google.com/document/d/1f-xjoKFd7hRqJ0oETVylUt3rAWTCG6LZAqg9HKFyrsw/edit)
 
 ## Enviornment
-![](Delivery_Bot/launch/turtlebot3_house.png)
+![](launch/turtlebot3_house.png)
+![](launch/Rvis_Gazebo_Driver_capture.png)
 
 ## Static Code analysis
 * Cppcheck results can be found [here](https://github.com/AnukritiSinghh/Delivery_Bot/blob/phase_3/results/cpplint_and_cppcheck_result.txt)
@@ -172,6 +175,7 @@ The user can denote the end and start point for the Hamburger in RVIS
 
 * Could not make own rvis launch file, had issues finding turtlebot3_lds_2d.lua,
 reliant on turtlbot source code.
+* Build badge not wokring as expected 
 ```
 colcon build --packages-select hamburger_cartographer 
 ```
