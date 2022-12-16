@@ -3,7 +3,7 @@
 ################################################################################
 cmake_minimum_required(VERSION 3.5)
 #project(turtlebot3_gazebo)
-project(Delivery_Bot)
+project(delivery_bot)
 
 execute_process(COMMAND "rm" "-f" "${CMAKE_SOURCE_DIR}/compile_commands.json")#!!!!!
 execute_process(COMMAND "ln" "-s" "-r" "${CMAKE_BINARY_DIR}/compile_commands.json" "${CMAKE_SOURCE_DIR}/")#!!!!!
