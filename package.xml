@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>Delivery_Bot</name>
+  <name>delivery_bot</name>
   <version>0.0.1</version>
   <description>Delivery_Bot program</description>
   <maintainer email="jgomes14@gmail.com">Joshua Gomes</maintainer>
