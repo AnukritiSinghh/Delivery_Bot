@@ -179,13 +179,12 @@ reliant on turtlbot source code.
 ```
 colcon build --packages-select hamburger_cartographer 
 ```
-this sample map is create from purely the autonomous driving 
-although incomplete, this map is created automatically 
-of course, one could manually controll the turtle bot to move it around and record a more accurate
-downside, a robot might be forever stuck in a room
-future development
+This map is created automatically.
+One could manually control the turtle bot to move it around and record a more accurate map. 
+Downside, a robot might be forever stuck in a room
+Future development:
 
-if for some reason RVIS doesnt accept the recorded map enter the following 
+If for some reason RVIS doesnt accept the recorded map enter the following 
 ```
 ros2 launch turtlebot3_navigation2 \
 navigation2.launch.py \
