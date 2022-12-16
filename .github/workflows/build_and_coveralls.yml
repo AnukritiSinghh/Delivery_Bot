@@ -69,9 +69,10 @@ jobs:
            
       # Upload coverage result to CodeCov
       - name: Upload coverage result to CodeCov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          version: "v0.1.15"
           files: ${{github.workspace}}/install/delivery_bot/lib/delivery_bot/coverage_cleaned.info
           # flags: unittests # optional
           # directory: ${{github.workspace}}/install/
