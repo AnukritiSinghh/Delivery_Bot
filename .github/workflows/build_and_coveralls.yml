@@ -66,11 +66,6 @@ jobs:
           source /opt/ros/humble/setup.bash
           colcon test --packages-select delivery_bot
           colcon test-result --test-result-base build/delivery_bot/ # catch error
-      # Generate code coverage test report
-      - name: Generate test coverage report
-        run: |
-          source install/setup.bash
-          ros2 run delivery_bot generate_coverage_report.bash
            
       # Upload coverage result to CodeCov
       - name: Upload coverage result to CodeCov
